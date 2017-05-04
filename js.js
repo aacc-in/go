@@ -76,8 +76,9 @@ function update() {
 };
 
 function getico(a) {
-
-	return document.querySelector('link[rel="shortcut icon"]').href;
+	var url = document.querySelector('link[rel="shortcut icon"]').href;
+	console.log(url, a);
+	return url;
 
 	// var s = a.indexOf("//");
 	// temp = a.substring(s + 2);
