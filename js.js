@@ -76,9 +76,10 @@ function update() {
 };
 
 function getico(a) {
-	var url = document.querySelector('link[rel="shortcut icon"]').href;
-	console.log(url, a);
-	return url;
+	// self
+	//var url = document.querySelector('link[rel="shortcut icon"]').href;
+	
+	return 'https://www.google.com/s2/favicons?domain=' + a;
 
 	// var s = a.indexOf("//");
 	// temp = a.substring(s + 2);
