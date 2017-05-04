@@ -2,11 +2,12 @@ if ('OVER' != getCookie("FIRSTTIME")) {
 	setCookie("_B", "http://www.baidu.com");
 	setCookie("_G", "http://www.google.com/ncr");
 	setCookie("_Q", "http://www.qq.com");
-	setCookie("_T", "http://www.tmall.com");
 	setCookie("_V", "http://www.v2ex.com");
 	setCookie("_F", "http://www.fuliba.net");
 	setCookie("_W", "http://www.weibo.com");
 	setCookie("_Y", "http://www.youku.com");
+	setCookie("_T", "https://www.tumblr.com/");
+	setCookie("_I", "http://instagram.com/");
 	setCookie("FIRSTTIME", "OVER")
 };
 var urlcache = {};
