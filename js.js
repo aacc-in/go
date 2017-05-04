@@ -76,13 +76,16 @@ function update() {
 };
 
 function getico(a) {
-	var s = a.indexOf("//");
-	temp = a.substring(s + 2);
-	var b = temp.indexOf("/");
-	if (b == -1) {
-		b = temp.length
-	};
-	return a.substring(0, b + s + 2) + '/favicon.ico'
+
+	return document.querySelector('link[rel="shortcut icon"]').href;
+
+	// var s = a.indexOf("//");
+	// temp = a.substring(s + 2);
+	// var b = temp.indexOf("/");
+	// if (b == -1) {
+	// 	b = temp.length
+	// };
+	// return a.substring(0, b + s + 2) + '/favicon.ico'
 };
 
 function setCookie(a, b, c, d, e) {
