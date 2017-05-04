@@ -8,6 +8,7 @@ if ('OVER' != getCookie("FIRSTTIME")) {
 	setCookie("_Y", "http://www.youku.com");
 	setCookie("_T", "https://www.tumblr.com/");
 	setCookie("_I", "http://instagram.com/");
+	setCookie("_S", "http://www.speedtest.net/");
 	setCookie("FIRSTTIME", "OVER")
 };
 var urlcache = {};
