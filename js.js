@@ -78,16 +78,24 @@ function update() {
 function getico(a) {
 	// self
 	//var url = document.querySelector('link[rel="shortcut icon"]').href;
-	
-	return 'https://www.google.com/s2/favicons?domain=' + a;
 
-	// var s = a.indexOf("//");
-	// temp = a.substring(s + 2);
-	// var b = temp.indexOf("/");
-	// if (b == -1) {
-	// 	b = temp.length
-	// };
-	// return a.substring(0, b + s + 2) + '/favicon.ico'
+	// google
+	//return 'https://www.google.com/s2/favicons?domain=' + a;
+
+	var s = a.indexOf("//");
+	temp = a.substring(s + 2);
+	var b = temp.indexOf("/");
+	if (b == -1) {
+		b = temp.length
+	};
+
+	var icon = a.substring(0, b + s + 2) + '/favicon.ico';
+
+	if (icon) {
+		return icon;
+	} else {
+		return document.querySelector('link[rel="shortcut icon"]').href;
+	}
 };
 
 function setCookie(a, b, c, d, e) {
